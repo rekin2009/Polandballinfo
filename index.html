@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Polandball</title>
   <meta charset="utf-8">
-  <style>
-  a {
-    color:black;
-    text-decoration: none;
-  }
-  .saw {
-    color:gray;
-  }
-  #active{
-    color:cyan;
-  }
-  h1 {
-    font-size: 40px;
-    text-align: center;
-  }
-  h2 {
-    font size: 20px;
-    text-align: left;
-  }
-  </style>
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="colors.js"></script>
 </head>
 <body>
-<h1><a href="index.html" class="saw active" id="active"><text-decoration:underline>Welcome to Polandball informations website</a></h1>
-<input type="button" value="night" onclick="
-  var target = document.querySelector('body');
-  if(this.value === 'night'){
-    target.style.backgroundColor = 'black';
-    target.style.color = 'white';
-    this.value = 'day';
-  } else {
-    target.style.backgroundColor = 'white';
-    target.style.color = 'black';
-    this.value = 'night';
-  }
-">
-<h2>Contents</h2>
-<script>
-var Contents = ['Polandball rules','Polandball exceptions and other informations']
-</script>
+  <h1><a href="index.html" class="saw active" id="active">
+      <text-decoration:underline>Welcome to Polandball informations website
+    </a></h1>
+    <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this)
+  ">
+  <h2>Contents</h2>
+  <script>
+    var Contents = ['Polandball rules', 'Polandball exceptions and other information']
+  </script>
   <ol>
-    <h3><li><a href="myweb2.html" class="saw">Polandball rules</a></li></h3>
-    <h3><li><a href="myweb3.html" class="saw">Polandball exceptions and other informations</a></li></h3>
+    <h3>
+      <li><a href="myweb2.html" class="saw">Polandball rules</a></li>
+    </h3>
+    <h3>
+      <li><a href="myweb3.html" class="saw">Polandball exceptions and other information</a></li>
+    </h3>
   </ol>
   <!-- 주석처리는 꺾세!-- --꺾세이다. -->
   <!--<h1><a href="myweb.html"><font color="red">Welcome to Polandball guide website</font></a></h1>
@@ -54,13 +35,16 @@ var Contents = ['Polandball rules','Polandball exceptions and other informations
     </ol>-->
   <h2>Polandballmeme</h2>
   <img src="v.jpg">
-  <p><a href="https://polandball.fandom.com/wiki/Polandball_(meme)"
-    target="_blank" title="Polandballmeme"><font color="Red">Polandball</font></a></font> is one of the world greatest meme
+  <p><a href="https://polandball.fandom.com/wiki/Polandball_(meme)" target="_blank" title="Polandballmeme">
+      <font color="Red">Polandball</font>
+    </a></font> is one of the world greatest meme
     <strong>Make the coutnries to balls<strong> and make cartoons etc.
-      And now many countries are made with balls<br>We call this coutryballs
-<p>But Polandball has some rules <br>Watch it 'Polandball rules'<p>
+        And now many countries are made with balls<br>We call this coutryballs
+        <p>But Polandball has some rules <br>Watch it 'Polandball rules'
+        <p>
 
 
-  maker:미믹킨
-  </body>
+          maker:미믹킨
+</body>
+
 </html>
